@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>سياسة الخصوصية — Reboot</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Cairo', -apple-system, sans-serif;
+    background: #0D1117;
+    color: #F0F6FC;
+    line-height: 1.9;
+    font-size: 16px;
+  }
+  nav {
+    position: sticky; top: 0; z-index: 100;
+    background: rgba(13, 17, 23, 0.9);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid #30363D;
+    padding: 16px 24px;
+  }
+  .nav-container {
+    max-width: 1000px; margin: 0 auto;
+    display: flex; justify-content: space-between; align-items: center;
+  }
+  .logo {
+    display: flex; align-items: center; gap: 12px;
+    font-size: 20px; font-weight: 800; color: #F0F6FC;
+    text-decoration: none;
+  }
+  .logo-icon {
+    width: 36px; height: 36px; border-radius: 10px;
+    background: linear-gradient(135deg, #FF8C42, #E85A24);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 20px; color: #fff;
+  }
+  .back-link {
+    color: #FF6B35; text-decoration: none;
+    font-size: 14px; font-weight: 600;
+  }
+  .container {
+    max-width: 900px; margin: 0 auto;
+    padding: 60px 24px 100px;
+  }
+  h1 {
+    font-size: clamp(30px, 4vw, 44px);
+    font-weight: 900; margin-bottom: 16px;
+    letter-spacing: -0.5px;
+  }
+  .updated {
+    color: #8B949E; font-size: 14px; margin-bottom: 40px;
+    padding-bottom: 30px; border-bottom: 1px solid #30363D;
+  }
+  h2 {
+    font-size: 24px; font-weight: 800; margin-top: 40px; margin-bottom: 16px;
+    color: #FF8C42;
+  }
+  h3 {
+    font-size: 18px; font-weight: 700; margin-top: 28px; margin-bottom: 12px;
+    color: #F0F6FC;
+  }
+  p {
+    color: #B0B8C1; margin-bottom: 16px; font-size: 15.5px;
+  }
+  ul, ol {
+    margin: 12px 0 20px 24px; color: #B0B8C1;
+  }
+  li { margin-bottom: 10px; font-size: 15.5px; }
+  strong { color: #F0F6FC; font-weight: 700; }
+  a { color: #FF6B35; }
+  .info-box {
+    background: #161B22;
+    border: 1px solid #30363D;
+    border-right: 4px solid #FF6B35;
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin: 20px 0;
+  }
+  .info-box p { margin: 0; color: #F0F6FC; }
+  .lang-switch {
+    display: flex; gap: 8px;
+    background: #161B22; padding: 4px; border-radius: 100px;
+    border: 1px solid #30363D;
+  }
+  .lang-switch a {
+    padding: 6px 16px; border-radius: 100px;
+    text-decoration: none; font-size: 13px; font-weight: 600;
+    color: #8B949E;
+  }
+  .lang-switch a.active { background: #FF6B35; color: #fff; }
+  .en { display: none; }
+  body.en-mode { direction: ltr; }
+  body.en-mode .en { display: block; }
+  body.en-mode .ar { display: none; }
+  footer {
+    text-align: center; padding: 40px 24px;
+    border-top: 1px solid #30363D;
+    color: #6E7681; font-size: 13px;
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-container">
+    <a href="index.html" class="logo">
+      <div class="logo-icon">↻</div>
+      <span>Reboot</span>
+    </a>
+    <div class="lang-switch">
+      <a href="#" class="active" onclick="setLang('ar');return false;">العربية</a>
+      <a href="#" onclick="setLang('en');return false;">English</a>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+
+<!-- ============ ARABIC VERSION ============ -->
+<div class="ar">
+  <h1>سياسة الخصوصية</h1>
+  <p class="updated">آخر تحديث: 30 أكتوبر 2026</p>
+
+  <div class="info-box">
+    <p>هذا التطبيق لا يجمع أي بيانات شخصية، ولا يحتوي على إعلانات، ولا يتضمن أي اشتراكات مدفوعة أو عمليات شراء داخل التطبيق.</p>
+  </div>
+
+  <h2>1. مقدمة</h2>
+  <p>
+    مرحبًا بك في <strong>Reboot</strong> ("التطبيق"، "نحن"). Reboot تطبيق لتتبع العادات يعمل بالكامل بدون إنترنت، ولا يتطلب إنشاء حساب أو تسجيل دخول.
+  </p>
+  <p>
+    توضح هذه السياسة كيف يتعامل التطبيق مع أي معلومات تتعلق بك. باستخدامك للتطبيق، فإنك توافق على الممارسات الموضحة هنا. وبما أن التطبيق لا يجمع أي بيانات، فهذه السياسة توضح ببساطة ما يبقى على جهازك، وما لا نستطيع الوصول إليه.
+  </p>
+
+  <h2>2. البيانات التي نجمعها</h2>
+  <p><strong>لا شيء.</strong> لا نجمع أي بيانات شخصية، ولا نملك خوادم، ولا نستطيع الوصول إلى بيانات المستخدم بأي شكل.</p>
+
+  <h3>2.1 البيانات المحفوظة محليًا</h3>
+  <p>يحفظ التطبيق البيانات التالية <strong>على جهازك فقط</strong>، عبر التخزين المحلي (AsyncStorage)، ولا يرسلها إلى أي خادم:</p>
+  <ul>
+    <li>أسماء العادات التي تنشئها</li>
+    <li>سجل الإنجاز اليومي</li>
+    <li>التسلسلات والإحصائيات</li>
+    <li>تفضيلاتك (اللغة، أيام الراحة، الإعدادات)</li>
+    <li>اسم المستخدم الاختياري (أنت من يكتبه)</li>
+  </ul>
+  <p>تبقى هذه البيانات على جهازك، ويمكنك حذفها بمسح بيانات التطبيق أو بإلغاء تثبيته.</p>
+
+  <h3>2.2 ما لا نجمعه</h3>
+  <ul>
+    <li>❌ الاسم</li>
+    <li>❌ البريد الإلكتروني</li>
+    <li>❌ رقم الهاتف</li>
+    <li>❌ الموقع الجغرافي</li>
+    <li>❌ جهات الاتصال</li>
+    <li>❌ الصور</li>
+    <li>❌ البيانات الصحية</li>
+  </ul>
+
+  <h2>3. عدم المشاركة والبيع</h2>
+  <p>
+    لا نشارك بياناتك ولا نبيعها ولا نؤجرها، ولا نرسلها إلى أي طرف ثالث، لأي غرض كان.
+  </p>
+  <p>
+    لأننا لا نجمع بيانات شخصية، لا توجد بيانات لدينا لمعالجتها أو بيعها أو مشاركتها.
+  </p>
+
+  <h2>4. الإشعارات</h2>
+  <p>
+    يرسل التطبيق إشعارات تذكير محلية فقط، وهي اختيارية بالكامل:
+  </p>
+  <ul>
+    <li>✅ تُجدول على جهازك ولا تمر بأي خادم</li>
+    <li>✅ يمكن إيقافها من إعدادات التطبيق في أي وقت</li>
+    <li>✅ لا تُستخدم لأي غرض تسويقي</li>
+  </ul>
+
+  <h2>5. الأذونات المستخدمة</h2>
+  <p>يطلب التطبيق ثلاثة أذونات فقط، وكلها مرتبطة بالتذكيرات المحلية:</p>
+  <ul>
+    <li><strong>POST_NOTIFICATIONS:</strong> لعرض إشعارات التذكير</li>
+    <li><strong>SCHEDULE_EXACT_ALARM:</strong> لجدولة التذكيرات في الوقت المحدد</li>
+    <li><strong>RECEIVE_BOOT_COMPLETED:</strong> لإعادة جدولة التذكيرات بعد إعادة تشغيل الجهاز</li>
+  </ul>
+  <p>لا يطلب التطبيق أي أذونات أخرى.</p>
+
+  <h2>6. حقوق المستخدم</h2>
+  <ul>
+    <li><strong>حق الوصول:</strong> كل بياناتك موجودة على جهازك، ويمكنك الوصول إليها في أي وقت من داخل التطبيق.</li>
+    <li><strong>حق الحذف:</strong> يمكنك حذف كل البيانات بمسح بيانات التطبيق من إعدادات الهاتف، أو بإلغاء تثبيت التطبيق.</li>
+    <li><strong>لا توجد بيانات عندنا:</strong> لا نحتفظ بأي نسخة من بياناتك، لذا لا توجد بيانات لدينا لطلب حذفها.</li>
+  </ul>
+
+  <h2>7. أمان البيانات</h2>
+  <p>
+    لا تُنقل بياناتك إلى أي مكان؛ فهي تبقى على جهازك فقط. ولا يمكننا الوصول إليها أو استعادتها إذا فُقد الجهاز أو تعطّل.
+  </p>
+  <p>
+    الحفاظ على أمان جهازك — مثل قفل الشاشة والنسخ الاحتياطي والتحكم فيمن يمكنه الوصول إلى الجهاز — مسؤوليتك.
+  </p>
+
+  <h2>8. خصوصية الأطفال</h2>
+  <p>
+    التطبيق <strong>غير موجه للأطفال دون سن 13 عامًا</strong>. وبما أن التطبيق لا يجمع أي بيانات، فلا توجد أي بيانات عن الأطفال نحتفظ بها.
+  </p>
+
+  <h2>9. التغييرات على هذه السياسة وتاريخ السريان</h2>
+  <p>
+    قد نحدّث سياسة الخصوصية من وقت لآخر. تُنشر النسخة المحدثة على هذه الصفحة مع تحديث تاريخ "آخر تحديث". استمرارك في استخدام التطبيق بعد نشر التغييرات يعني موافقتك عليها.
+  </p>
+  <p><strong>تاريخ سريان هذه النسخة:</strong> 30 أكتوبر 2026.</p>
+
+  <h2>10. اتصل بنا</h2>
+  <p>لأي استفسار حول سياسة الخصوصية، تواصل معنا:</p>
+  <div class="info-box">
+    <p>📧 <strong>البريد الإلكتروني:</strong> <a href="mailto:support@reboot-app.com">support@reboot-app.com</a></p>
+  </div>
+
+  <p style="margin-top:40px;padding-top:20px;border-top:1px solid #30363D;color:#6E7681;font-size:13px;">
+    باستخدامك لتطبيق Reboot، فأنت تقرّ بأنك قرأت وفهمت ووافقت على هذه السياسة.
+  </p>
+</div>
+
+<!-- ============ ENGLISH VERSION ============ -->
+<div class="en">
+  <h1>Privacy Policy</h1>
+  <p class="updated">Last updated: October 30, 2026</p>
+
+  <div class="info-box">
+    <p>This application does not collect any personal data, does not contain ads, and does not include any paid subscriptions or in-app purchases.</p>
+  </div>
+
+  <h2>1. Introduction</h2>
+  <p>
+    Welcome to <strong>Reboot</strong> ("the App", "we", "us"). Reboot is a habit tracking app that works fully offline and does not require an account or signing in.
+  </p>
+  <p>
+    This policy explains how the App handles any information related to you. By using the App, you agree to the practices described here. Since the App does not collect any data, this policy simply explains what stays on your device and what we cannot access.
+  </p>
+
+  <h2>2. Data We Collect</h2>
+  <p><strong>None.</strong> We do not collect any personal data, we do not own servers, and we cannot access user data in any way.</p>
+
+  <h3>2.1 Data Stored Locally</h3>
+  <p>The App stores the following data <strong>on your device only</strong>, using local storage (AsyncStorage), and never sends it to any server:</p>
+  <ul>
+    <li>Habit names you create</li>
+    <li>Daily completion history</li>
+    <li>Streaks and statistics</li>
+    <li>Your preferences (language, rest days, settings)</li>
+    <li>Optional username (you write it yourself)</li>
+  </ul>
+  <p>This data stays on your device and can be deleted by clearing the app data or uninstalling the App.</p>
+
+  <h3>2.2 What We Do NOT Collect</h3>
+  <ul>
+    <li>❌ Name</li>
+    <li>❌ Email address</li>
+    <li>❌ Phone number</li>
+    <li>❌ Location</li>
+    <li>❌ Contacts</li>
+    <li>❌ Photos</li>
+    <li>❌ Health data</li>
+  </ul>
+
+  <h2>3. No Sharing and No Selling</h2>
+  <p>
+    We do not share your data, sell it, rent it, or send it to any third party for any reason.
+  </p>
+  <p>
+    Because we do not collect personal data, there is no data on our side to process, sell, or share.
+  </p>
+
+  <h2>4. Notifications</h2>
+  <p>
+    The App sends local reminder notifications only, and they are entirely optional:
+  </p>
+  <ul>
+    <li>✅ Scheduled on your device and never pass through a server</li>
+    <li>✅ Can be disabled from the App settings at any time</li>
+    <li>✅ Not used for any marketing purpose</li>
+  </ul>
+
+  <h2>5. Permissions Used</h2>
+  <p>The App requests only three permissions, all related to local reminders:</p>
+  <ul>
+    <li><strong>POST_NOTIFICATIONS:</strong> to display reminder notifications</li>
+    <li><strong>SCHEDULE_EXACT_ALARM:</strong> to schedule reminders at the exact time</li>
+    <li><strong>RECEIVE_BOOT_COMPLETED:</strong> to reschedule reminders after the device restarts</li>
+  </ul>
+  <p>The App does not request any other permissions.</p>
+
+  <h2>6. User Rights</h2>
+  <ul>
+    <li><strong>Right to access:</strong> All your data is on your device, and you can access it inside the App at any time.</li>
+    <li><strong>Right to delete:</strong> You can delete all data by clearing the app data from your phone settings or by uninstalling the App.</li>
+    <li><strong>No data on our side:</strong> We keep no copy of your data, so there is no data with us to request deletion of.</li>
+  </ul>
+
+  <h2>7. Data Security</h2>
+  <p>
+    Your data is not transferred anywhere; it stays only on your device. We cannot access or recover it if the device is lost or fails.
+  </p>
+  <p>
+    Keeping your device secure — such as screen lock, backups, and controlling who can access it — is your responsibility.
+  </p>
+
+  <h2>8. Children's Privacy</h2>
+  <p>
+    The App is <strong>not intended for children under 13</strong>. Since the App does not collect any data, we do not hold any data about children.
+  </p>
+
+  <h2>9. Changes to This Policy and Effective Date</h2>
+  <p>
+    We may update this Privacy Policy from time to time. The updated version is published on this page along with a revised "Last updated" date. Your continued use of the App after the changes are published means you accept them.
+  </p>
+  <p><strong>Effective date of this version:</strong> October 30, 2026.</p>
+
+  <h2>10. Contact Us</h2>
+  <p>For any questions about this Privacy Policy, contact us:</p>
+  <div class="info-box">
+    <p>📧 <strong>Email:</strong> <a href="mailto:support@reboot-app.com">support@reboot-app.com</a></p>
+  </div>
+
+  <p style="margin-top:40px;padding-top:20px;border-top:1px solid #30363D;color:#6E7681;font-size:13px;">
+    By using Reboot, you acknowledge that you have read, understood, and agreed to this policy.
+  </p>
+</div>
+
+</div>
+
+<footer>
+  <p>© 2026 Reboot. All rights reserved. · <a href="index.html">الرئيسية</a> · <a href="terms.html">شروط الخدمة</a></p>
+</footer>
+
+<script>
+function setLang(lang) {
+  if (lang === 'en') {
+    document.body.classList.add('en-mode');
+    document.documentElement.lang = 'en';
+    document.documentElement.dir = 'ltr';
+    document.querySelectorAll('.lang-switch a').forEach(a => a.classList.remove('active'));
+    document.querySelectorAll('.lang-switch a')[1].classList.add('active');
+  } else {
+    document.body.classList.remove('en-mode');
+    document.documentElement.lang = 'ar';
+    document.documentElement.dir = 'rtl';
+    document.querySelectorAll('.lang-switch a').forEach(a => a.classList.remove('active'));
+    document.querySelectorAll('.lang-switch a')[0].classList.add('active');
+  }
+}
+</script>
+
+</body>
+</html>
