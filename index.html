@@ -633,8 +633,8 @@
 
   .screenshot {
     flex: 0 0 auto;
-    width: 260px;
-    height: 540px;
+    width: 300px;
+    aspect-ratio: 9 / 16;
     border-radius: 28px;
     border: 8px solid #1a1f26;
     background: var(--surface);
@@ -654,26 +654,6 @@
     height: 100%;
     object-fit: cover;
     display: block;
-  }
-
-  .screenshot-placeholder {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
-    color: var(--text-muted);
-    font-size: 13px;
-    text-align: center;
-    padding: 20px;
-  }
-
-  .screenshot-placeholder::before {
-    content: '📱';
-    font-size: 48px;
-    opacity: 0.5;
   }
 
   /* ============ Quote Showcase ============ */
@@ -1289,44 +1269,22 @@
 
     <div class="screenshots">
       <div class="screenshot">
-        <div class="screenshot-placeholder">
-          <span class="t-ar">الشاشة الرئيسية</span>
-          <span class="t-en">Home screen</span>
-          <span style="font-size:11px;opacity:0.6;" class="t-ar">ابدل هذا بـ screenshot-1.png</span>
-          <span style="font-size:11px;opacity:0.6;" class="t-en">Replace this with screenshot-1.png</span>
-        </div>
+        <img src="assets/01-home.png" alt="Reboot home screen — daily habits list" loading="lazy">
       </div>
       <div class="screenshot">
-        <div class="screenshot-placeholder">
-          <span class="t-ar">إضافة عادة</span>
-          <span class="t-en">Add a habit</span>
-          <span style="font-size:11px;opacity:0.6;" class="t-ar">ابدل هذا بـ screenshot-2.png</span>
-          <span style="font-size:11px;opacity:0.6;" class="t-en">Replace this with screenshot-2.png</span>
-        </div>
+        <img src="assets/02-stats.png" alt="Reboot statistics — streaks and activity map" loading="lazy">
       </div>
       <div class="screenshot">
-        <div class="screenshot-placeholder">
-          <span class="t-ar">الإحصائيات</span>
-          <span class="t-en">Statistics</span>
-          <span style="font-size:11px;opacity:0.6;" class="t-ar">ابدل هذا بـ screenshot-3.png</span>
-          <span style="font-size:11px;opacity:0.6;" class="t-en">Replace this with screenshot-3.png</span>
-        </div>
+        <img src="assets/03-add.png" alt="Reboot — creating a new habit" loading="lazy">
       </div>
       <div class="screenshot">
-        <div class="screenshot-placeholder">
-          <span class="t-ar">الإنعاش</span>
-          <span class="t-en">Revival</span>
-          <span style="font-size:11px;opacity:0.6;" class="t-ar">ابدل هذا بـ screenshot-4.png</span>
-          <span style="font-size:11px;opacity:0.6;" class="t-en">Replace this with screenshot-4.png</span>
-        </div>
+        <img src="assets/04-notifications.png" alt="Reboot notification settings" loading="lazy">
       </div>
       <div class="screenshot">
-        <div class="screenshot-placeholder">
-          <span class="t-ar">الاقتباسات</span>
-          <span class="t-en">Quotes</span>
-          <span style="font-size:11px;opacity:0.6;" class="t-ar">ابدل هذا بـ screenshot-5.png</span>
-          <span style="font-size:11px;opacity:0.6;" class="t-en">Replace this with screenshot-5.png</span>
-        </div>
+        <img src="assets/05-revival.png" alt="Reboot revival zone — streak challenge" loading="lazy">
+      </div>
+      <div class="screenshot">
+        <img src="assets/06-profile.png" alt="Reboot profile and settings" loading="lazy">
       </div>
     </div>
   </div>
